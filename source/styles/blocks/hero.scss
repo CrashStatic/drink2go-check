@@ -1,0 +1,34 @@
+.hero {
+  margin: 0 auto;
+  background-color: #f3ebe1;
+}
+
+@media (max-width: $mobile-width) {
+  .hero {
+    margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero {
+    background: linear-gradient(to bottom, #f3ebe1, #f3ebe1 640px, #ffffff 640px, #ffffff 100%);
+  }
+
+  .hero__button-container {
+    top: 80px;
+    left: 0;
+    height: 640px;
+  }
+
+  .hero__button {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    position: relative;
+    background: #f3ebe1;
+  }
+}
